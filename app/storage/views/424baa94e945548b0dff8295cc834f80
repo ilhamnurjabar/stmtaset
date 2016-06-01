@@ -1,0 +1,151 @@
+<?php /* Page title */ ?>
+<?php $__env->startSection('title'); ?>
+View Assets for  <?php echo e($user->fullName()); ?> ::
+@parent
+<?php $__env->stopSection(); ?>
+
+<?php /* Account page content */ ?>
+<?php $__env->startSection('content'); ?>
+
+<div class="row user-profile">
+            <!-- header -->
+            <div class="row header">
+                <div class="col-md-8">
+                    <?php if($user->avatar): ?>
+                        <img src="/uploads/avatars/<?php echo e($user->avatar); ?>" class="avatar img-circle">
+                    <?php else: ?>
+                        <img src="<?php echo e($user->gravatar()); ?>" class="avatar img-circle">
+                    <?php endif; ?>
+                    <h3 class="name"><?php echo e($user->fullName()); ?></h3>
+                    <span class="area"><?php echo e($user->jobtitle); ?>
+
+                        </span>
+                </div>
+        	</div>
+
+            <div class="row profile">
+
+                    <!-- bio, new note & orders column -->
+                    <div class="col-md-10 bio">
+                        <div class="profile-box">
+
+                        <?php if($user->deleted_at != NULL): ?>
+
+                            <div class="col-md-12">
+                                <div class="alert alert-danger">
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <strong>Warning: </strong>
+                                     This user has been deleted. You will have to restore this user to edit them or assign them new assets.
+                                </div>
+                            </div>
+
+                        <?php endif; ?>
+
+
+                            <!-- checked out assets table -->
+                            <?php if(count($user->assets) > 0): ?>
+                            
+                            <h4>Assets Checked Out to You</h4>
+                            <br>
+							<div class="table-responsive">
+							<table class="display">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">Asset Type</th>
+                                        <th class="col-md-2">Asset Tag</th>
+                                        <th class="col-md-2">Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach($user->assets as $asset): ?>
+                                    <tr>
+                                        <td>
+                                        <?php if($asset->physical=='1'): ?> <?php echo e($asset->model->name); ?>
+
+                                        <?php endif; ?>
+                                        </td>
+                                        <td><?php echo e($asset->asset_tag); ?></td>
+                                        <td><?php echo e($asset->name); ?></td>
+                                    </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+							</div>
+                            <?php endif; ?>
+
+
+                            <!-- checked out assets table -->
+                            <?php if(count($user->licenses) > 0): ?>
+                            <br><br><br>
+                            <h4>Software Checked Out to You</h4>
+                            <br>
+                            <div class="table-responsive">
+							<table class="display">                                
+								<thead>
+                                    <tr>
+                                        <th class="col-md-4">Name</th>
+                                        <th class="col-md-4">Serial</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach($user->licenses as $license): ?>
+                                    <tr>
+                                        <td><?php echo e($license->name); ?></td>
+                                        <td><?php echo e($license->serial); ?></td>
+                                        </td>
+                                    </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                            </div>
+                            <?php endif; ?>
+
+
+
+
+                            <!-- checked out assets table -->
+                            <br><br><br>
+                            <h4>History </h4>
+                            <br>
+                            <?php if(count($user->userlog) > 0): ?>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-3">Date</th>
+                                        <th class="col-md-3"><span class="line"></span>Action</th>
+                                        <th class="col-md-3"><span class="line"></span>Asset</th>
+                                        <th class="col-md-3"><span class="line"></span>By</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach($user->userlog as $log): ?>
+                                    <tr>
+                                        <td><?php echo e($log->created_at); ?></td>
+                                        <td><?php echo e($log->action_type); ?></td>
+                                        <td>
+                                        <?php if((isset($log->assetlog->name)) && ($log->assetlog->deleted_at=='')): ?>
+                                            <?php echo e($log->assetlog->asset_tag); ?>
+
+                                        <?php elseif((isset($log->assetlog->name)) && ($log->assetlog->deleted_at!='')): ?>
+                                            <del><?php echo e($log->assetlog->name); ?></del> (deleted)
+                                            
+                                        <?php elseif((isset($log->accessorylog->name)) && ($log->accessorylog->deleted_at=='')): ?>
+                                            <?php echo e($log->accessorylog->name); ?>
+
+                                        <?php endif; ?>
+                                        </td>
+                                        <td><?php echo e($log->adminlog->fullName()); ?></td>
+                                    </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                            <?php endif; ?>
+
+                        </div>
+                    </div>
+
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('backend/layouts/default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

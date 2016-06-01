@@ -1,0 +1,133 @@
+[2016-01-21 10:37:14] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 0 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', '', 's:40:"b7587e661...', 'cbc', '\x92\x03\x1F\xFC\xCEx\xC0\x97tZ\xA3\x9F\xFA\x83\x86...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('b7587e661cf1d7f...', '\x92\x03\x1F\xFC\xCEx\xC0\x97tZ\xA3\x9F\xFA\x83\x86...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('b7587e661cf1d7f...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 10:41:36] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 0 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', '', 's:40:"141295395...', 'cbc', '/%Q\x89\xB8\xA0\x87\xFBL\xE9\xA3B\x9D\xF7\x13...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('1412953954c945c...', '/%Q\x89\xB8\xA0\x87\xFBL\xE9\xA3B\x9D\xF7\x13...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('1412953954c945c...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 10:41:40] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 0 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', '', 's:40:"eef00e458...', 'cbc', ',50m\xA3\n\x96;\xD5\xCEK\xD6B\xE7\x1E...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('eef00e4584c57a9...', ',50m\xA3\n\x96;\xD5\xCEK\xD6B\xE7\x1E...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('eef00e4584c57a9...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 10:41:41] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 0 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', '', 's:40:"2676bec99...', 'cbc', '\xD2t\x99c\xB8\x7F\xC3\xF1.\x9C\xF7L\xEEvS...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('2676bec9906f5b7...', '\xD2t\x99c\xB8\x7F\xC3\xF1.\x9C\xF7L\xEEvS...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('2676bec9906f5b7...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 10:41:42] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 0 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', '', 's:40:"a583c8492...', 'cbc', '\x9B\xB1>\x7F\xFA\x06\xAB\xDB*\xA7\xEB"\x8En\xA1...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('a583c849268c45a...', '\x9B\xB1>\x7F\xFA\x06\xAB\xDB*\xA7\xEB"\x8En\xA1...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('a583c849268c45a...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 19:02:28] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 36 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', 'Change_this_key...', 's:40:"c5fd37ce3...', 'cbc', 'Y\xBC\xFD\x95K\xA3rx\x17\xF2\x91J\x87y2...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('c5fd37ce33297f4...', 'Y\xBC\xFD\x95K\xA3rx\x17\xF2\x91J\x87y2...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('c5fd37ce33297f4...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 19:02:34] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 36 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', 'Change_this_key...', 's:40:"1c9b7ba52...', 'cbc', 'P\x15<-\xB4a\x9A3\xD3\tP\xEA\xEC\x06\xCB...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('1c9b7ba5251e8fa...', 'P\x15<-\xB4a\x9A3\xD3\tP\xEA\xEC\x06\xCB...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('1c9b7ba5251e8fa...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 19:02:35] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 36 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', 'Change_this_key...', 's:40:"49aa8ed31...', 'cbc', '\xB8\xC8oo\xA5\xD8\xFC\x0E\xD8\xD6\xD2\xC6\xC2D\xDB...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('49aa8ed31af4fce...', '\xB8\xC8oo\xA5\xD8\xFC\x0E\xD8\xD6\xD2\xC6\xC2D\xDB...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('49aa8ed31af4fce...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 19:06:22] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 36 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', 'Change_this_key...', 's:40:"ebd2f7eed...', 'cbc', '\x89\xBD!M\x9C\xEA:\x7F\xE0\xF0Q%K\x12V...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('ebd2f7eed3fdd7f...', '\x89\xBD!M\x9C\xEA:\x7F\xE0\xF0Q%K\x12V...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('ebd2f7eed3fdd7f...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 19:09:16] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 36 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', 'Change_this_key...', 's:40:"f85920e17...', 'cbc', '\xF53\xFE\xD7\x88\x9A\xC2\xE5e1\x1Dl\x16\x8Ad...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('f85920e17ff9c1b...', '\xF53\xFE\xD7\x88\x9A\xC2\xE5e1\x1Dl\x16\x8Ad...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('f85920e17ff9c1b...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 19:13:49] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 36 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', 'Change_this_key...', 's:40:"d5a82b3e9...', 'cbc', '\xAA}\xD7\x81\xE2\xE8\x8Fk\x81\x9D\x94B\f\xA3\x01...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('d5a82b3e9156c76...', '\xAA}\xD7\x81\xE2\xE8\x8Fk\x81\x9D\x94B\f\xA3\x01...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('d5a82b3e9156c76...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 19:15:07] production.ERROR: exception 'ErrorException' with message 'mcrypt_encrypt(): Key of size 36 not supported by this algorithm. Only keys of sizes 16, 24 or 32 supported' in C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php:78
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'mcrypt_encrypt(...', 'C:\\xampp\\htdocs...', 78, Array)
+#1 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(78): mcrypt_encrypt('rijndael-256', 'Change_this_key...', 's:40:"49448088a...', 'cbc', '\x19\xED\x9B\xF4\x8B\xBE]\x9A\xA4\x8B*\xBD6\x1C\xF4...')
+#2 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Encryption\Encrypter.php(57): Illuminate\Encryption\Encrypter->padAndMcrypt('49448088a22bccf...', '\x19\xED\x9B\xF4\x8B\xBE]\x9A\xA4\x8B*\xBD6\x1C\xF4...')
+#3 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(118): Illuminate\Encryption\Encrypter->encrypt('49448088a22bccf...')
+#4 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Guard->encrypt(Object(Illuminate\Http\RedirectResponse))
+#5 C:\xampp\htdocs\stmtaset\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\stmtaset\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(641): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#7 C:\xampp\htdocs\stmtaset\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2016-01-21 19:19:29] production.DEBUG: Authenticating user against database. [] []
